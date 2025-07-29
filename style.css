@@ -773,6 +773,160 @@ form textarea {
 
 /*FOOTER*/
 
+.section-wrap {
+    padding: 2rem 3.6rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.section-footer {
+    height: 40vh;
+	background: #211e25;}
+
+.footer-wrap {
+    margin-top: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer-wrap>div {
+    -ms-flex-preferred-size: 320px;
+    flex-basis: 320px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footer-wrap>.footer-menu,
+.footer-wrap>.top-courses-links {
+    -ms-flex-preferred-size: 190px;
+    flex-basis: 190px;
+}
+
+.footer-wrap>div>h2 {
+    padding-bottom: 0.4rem;
+    position: relative;
+    color: #DF2771;
+    font-size: 1.4rem;
+}
+
+.footer-wrap>div>h2::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 0.2rem;
+    width: 3.8rem;
+    background: gray;
+    border-radius: 0.1rem;
+}
+
+.footer-wrap>div>div>p {
+    padding-top: 0.6rem;
+	color: #FFF;
+    font-size: 1.1rem;
+}
+
+.footer-wrap>div>div {
+    padding-top: 0.2rem;
+}
+
+.footer-wrap>div>div>p>a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.footer-wrap>div>div>p>a:hover {
+    color: #DF2771;
+}
+
+
+.master-cards .payment-cards {
+    margin-top: 0.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.payment-cards .payment-link {
+    margin: 0.6rem 1rem 0 0;
+}
+
+.payment-cards .payment-link a {
+    text-decoration: none;
+
+}
+
+.payment-link a span {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.social-media-links {
+    margin-top: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.social-media-links .f-links {
+    margin-right: 0.8rem;
+}
+
+.social-media-links .f-links a {
+    text-decoration: none;
+}
+
+.social-media-links .f-links a span {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #211e25;
+    border-top: 1px solid #555;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
 
 /*PROPERTIES FOR MAKING WEBSITE RESPONSIVE*/
 @media screen and (max-width: 960px) {
