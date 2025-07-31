@@ -106,14 +106,12 @@ nav ul li a:hover {
 	color: #DF2771;
 }
 
-a, button {
+nav a, button {
 	float: left;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 15px;
-	color: #2E3D49;
 	display: block;
-	text-decoration: none;
 	text-align: center;
 }
 .head-container {
@@ -373,6 +371,8 @@ a, button {
 	color: #272529;
 	font-family: cursive;
 	text-decoration: none;
+	display: block;
+	text-align: center;
 }
 .cbox .det a:hover {
 	background: linear-gradient(to right, #FA4B37, #DF2771);
@@ -489,7 +489,16 @@ a, button {
 }
 .service-swipe a {
 	padding: 0;
-	margin: 40px 10px;
+	margin: 40px 10px; 
+	float: left;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	color: #2E3D49;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+
 }
 .service-swipe .s-card {
 	display: flex;
@@ -783,7 +792,7 @@ form textarea {
 
 .section-footer {
   background: #211e25;
-  padding: 2rem 3.6rem;
+  padding: 3rem 2rem; /* Simplified padding */
   width: 100%;
   box-sizing: border-box;
 }
@@ -792,26 +801,31 @@ form textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start; /* Align items to top */
   gap: 2rem;
+  max-width: 1200px; /* Add max-width for better control */
+  margin: 0 auto; /* Center the footer content */
 }
 
 .footer-wrap > div {
-  flex: 1 1 200px;
+  flex: 1 1 250px; /* Increased min-width for better distribution */
   box-sizing: border-box;
+  min-height: 200px; /* Ensure consistent height */
 }
 
 .footer-wrap h2 {
-  padding-bottom: 0.4rem;
+  padding-bottom: 1rem; /* Increased padding for better spacing */
   color: #DF2771;
   font-size: 1.4rem;
   position: relative;
+  margin-bottom: 1rem; /* Add margin for better separation */
+  text-align: center;
 }
 
 .footer-wrap h2::before {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 0.5rem; /* Adjusted position */
   width: 3.8rem;
   height: 0.2rem;
   background: gray;
@@ -822,11 +836,14 @@ form textarea {
 .fmenu a,
 .flinks a {
   color: #fff;
-  font-size: 1.1rem;
-  margin: 0.4rem 0;
+  font-size: 1rem; /* Slightly reduced for consistency */
+  margin: 0.6rem 0; /* Increased margin for better spacing */
   display: block;
   text-decoration: none;
   transition: color 0.3s ease;
+  line-height: 1.5; /* Add line height for readability */
+  text-align: center;
+  
 }
 
 .fmenu a:hover,
@@ -835,12 +852,29 @@ form textarea {
 }
 
 .social-media-links {
-  margin-top: 0.8rem;
+  margin-top: 1.5rem; /* Increased margin */
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
-.social-media-links span {
+.social-media-links .f-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(223, 39, 113, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-media-links .f-links a:hover {
+  background: #DF2771;
+  transform: translateY(-2px);
+}
+
+.social-media-links .f-links a span {
   font-size: 1.2rem;
   color: #fff;
 }
@@ -849,29 +883,71 @@ form textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 0.6rem;
+  margin-top: 1rem;
+}
+
+.payment-link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.payment-link a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
 .payment-link a span {
-  font-size: 3rem;
+  font-size: 2rem; /* Reduced from 3rem */
   color: #fff;
 }
 
+/* Bottom footer */
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
-  background: #211e25;
-  border-top: 1px solid #555;
+  padding: 2rem;
+  background: #1a1720; /* Slightly darker than main footer */
+  border-top: 1px solid #333;
+  margin-top: 0; /* Remove any margin */
 }
 
 footer p {
-  color: #fff;
-  font-size: 1.2rem;
+  color: #ccc;
+  font-size: 1rem;
   margin: 0;
+  text-align: center;
 }
 
+
+/* Responsive design for footer */
+@media screen and (max-width: 768px) {
+  .footer-wrap {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .footer-wrap > div {
+    flex: 1 1 100%;
+    min-height: auto;
+  }
+  
+  .social-media-links,
+  .payment-cards {
+    justify-content: center;
+  }
+  
+  .section-footer {
+    padding: 2rem 1rem;
+}
+}
 
 
 
